@@ -1,0 +1,392 @@
+/* Start Golobel */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Sans-Serif, Arial;
+    transition: .3s;
+}
+:root {
+    --main-color: #353535;
+    --main-link-color: #0aa;
+    --main-bg-color: #fff;
+    --section-bg-color: #f6f6f6;
+    --section-color: #999;
+    --bg-color: #fcfcfc;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.head-2 {
+    width: fit-content;
+    font-size: 70px;
+    color: var(--section-bg-color);
+    padding-top: 50px;
+    border-top: 4px solid var(--section-bg-color);
+    margin: 0px auto;
+}
+.ph2 {
+    position: relative;
+    width: fit-content;
+    color: var(--section-color);
+    padding-bottom: 50px;
+    top: -30px;
+    margin: 0px auto;
+}
+/* End Golobel */
+
+/* Start Header */
+header.header {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    padding: 20px;
+}
+.logo span {
+    display: inline-block;
+    margin: 2px;
+}
+.logo span.i {
+    height: 30px;
+    width: 5px;
+    background-color: var(--main-color);
+    
+}
+.logo span.o {
+    height: 20px;
+    width: 20px;
+    background-color: var(--main-bg-color);
+    border: 5px solid var(--main-link-color);
+    border-radius: 50%;
+}
+.navegation {
+    position: relative;
+}
+.navegation input {
+    display: none;
+}
+.navegation label {
+    display: block;
+    padding: 20px;
+}
+.navegation label span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--main-color);
+    margin: 4px;
+    transition: .3s;
+}
+.navegation label span.n {
+    width: 15px;
+    margin-left: 14px;
+}
+.navegation ul {
+    display: none;
+    position: absolute;
+    width: 200px;
+    background-color: var(--main-bg-color);
+    right: 0px;
+    top: 118%;
+    box-shadow: 0 1px 3px var(--section-color);
+}
+.navegation ul a {
+    display: block;
+    padding: 20px;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--section-color);
+}
+.navegation ul a:hover {
+    color: var(--main-link-color);
+    border-bottom: 1px solid var(--main-link-color);
+}
+.navegation input:checked + label .n0 {
+    transform: rotate(45deg) translate(3px, 2.1px);
+}
+.navegation input:checked + label .n {
+    display: none;
+}
+.navegation input:checked + label .n1 {
+    transform: rotate(-45deg) translate(2.6px, -2px);
+}
+.navegation input:checked ~ ul {
+    display: block;
+}
+@media (max-width:730px) {
+    header.header {
+        justify-content: space-between;
+    }
+}
+/* End Header */
+
+/* Start Hero Section */
+.hero {
+    text-align: center;
+    background-color: var(--section-bg-color);
+}
+.hero h1 {
+    font-size: 50px;
+    padding: 50px 20px;
+    color: var(--main-link-color);
+}
+.hero p {
+    padding: 0 20px 100px;
+    color: var(--main-color);
+}
+@media (max-width:730px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+/* End Hero Section */
+
+/* Start Skill Section */
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: var(--main-bg-color);
+}
+.skill .box {
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+.skill .box i {
+    width: 20px;
+    height: 20px;
+    border: 5px solid var(--main-link-color);
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+.skill .box h3 {
+    padding: 10px;
+    color: var(--main-color);
+}
+.skill .box p {
+    padding: 10px;
+    color: var(--section-color);
+}
+/* End Skill Section */
+
+/* Start Services Section */
+.services {
+    padding-bottom: 50px;
+}
+.services .serv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.services .srvs {
+    display: flex;
+    flex-wrap: wrap;
+}
+.services .srvs > div {
+    margin: auto;
+}
+.services .box {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+.services .box i {
+    display: block;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: normal;
+    padding: 0 10px;
+    color: var(--main-link-color);
+}
+.services .box h3 {
+    padding: 0 10px 10px;
+    color: var(--main-color);
+}
+.services .box p {
+    padding: 0 10px 10px;
+    color: var(--section-color);
+}
+.services .img {
+    position: relative;
+    margin: 40px 10px;
+    width: 180px;
+    height: 240px;
+    background-color: var(--section-bg-color);
+}
+.services span {
+    position: absolute;
+    width: 80px;
+    height: 300px;
+    background-color: var(--main-link-color);
+    right: -30px;
+    top: -30px;
+    z-index: -1;
+}
+/* End Services Section */
+
+/* Start Portfolio Section */
+.portfolio {
+    padding-bottom: 50px;
+    background-color: var(--bg-color);
+}
+.portfolio .modle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio .modle .box {
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid var(--section-bg-color);
+    background-color: var(--section-bg-color);
+    box-shadow: 0 0 1px var(--section-color);
+}
+.portfolio .modle .box:hover {
+    box-shadow: 0 0 10px var(--section-color);
+}
+.portfolio .modle .box img {
+    width: 100%;
+}
+.portfolio .modle .box h3 {
+    padding: 20px;
+    padding-bottom: 0;
+    color: var(--main-color);
+}
+.portfolio .modle .box p {
+    padding: 20px;
+    color: var(--section-color);
+}
+/* End Portfolio Section */
+
+/* Start About Section */
+.about {
+    padding-bottom: 50px;
+}
+.about > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.about .img {
+    position: relative;
+    margin: 0 90px 0 20px;
+    width: 180px;
+    height: 240px;
+    background-color: var(--section-bg-color);
+}
+.about .img span {
+    position: absolute;
+    width: 80px;
+    height: 180px;
+    border-bottom: 50px solid var(--main-link-color);
+    border-left: 50px solid var(--main-link-color);
+    right: -100px;
+    top: -20px;
+    z-index: -1;
+}
+.about .box {
+    max-width: 450px;
+    margin: 20px;
+}
+.about .box p {
+    color: var(--main-color);
+    padding: 20px;
+}
+.about .box span {
+    display: block;
+    background-color: var(--section-bg-color);
+    margin: 20px;
+    width: 50%;
+    height: 3px;
+    margin-bottom: 0;
+}
+.about .box span > span {
+    display: block;
+    background-color: var(--main-link-color);
+    width: 80%;
+    height: 3px;
+    margin: 0 auto;
+}
+.about .box p + span + p {
+    color: var(--section-color);
+}
+/* End About Section */
+
+/* Start Contact Section */
+.contact {
+    padding-bottom: 50px;
+    background-color: var(--bg-color);
+}
+.contact .box {
+    padding: 40px;
+}
+.contact .box h3 {
+    padding: 10px 20px;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.contact .box > a {
+    display: block;
+    margin: 10px 40px;
+    font-size: 1.8rem;
+    color: var(--main-link-color);
+    font-weight: bold;
+}
+.contact .box > div {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding: 10px 80px;
+    color: var(--section-color);
+}
+.contact .box > div p {
+    color: var(--section-color);
+    padding-right: 30px;
+}
+.contact .box > div a {
+    color: var(--section-color);
+    padding-right: 10px;
+}
+.contact .box > div a:hover {
+    color: var(--main-link-color);
+}
+/* End Contact Section */
+
+/* Start Footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 10px;
+}
+footer > div p,
+footer > span {
+    padding: 10px;
+    color: var(--bg-color);
+}
+footer > div p a {
+    color: var(--main-link-color);
+}
+/* End Footer */
