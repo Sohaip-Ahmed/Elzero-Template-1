@@ -21,4 +21,4 @@ This is my third project, built as a practical web development exercise inspired
 ---
 
 ## 🔗 Links
-🏠 [Live Demo](https://sohaip-ahmed.github.io/Project-Name/) | 📂 [Other Projects](https://github.com/Sohaip-Ahmed/)
+🏠 [Live Demo](https://sohaip-ahmed.github.io/Elzero-Template-1/) | 📂 [Other Projects](https://github.com/Sohaip-Ahmed/)
